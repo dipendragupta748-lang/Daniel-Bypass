@@ -1,27 +1,26 @@
-# Daniel Bypass - Termux AI & Coding Setup
+# 📱 Daniel Bypass — Termux AI & Coding Setup
 
-Welcome to the official **Daniel Bypass** repository! This ecosystem provides automated Termux scripts, OpenCode environment, and local workspace tools to build custom AI assistants and Android apps directly from your phone.
+> **by मिस्टर दीपेंद्र जी (रूपनदेही मोबाइल)**  
+> **GitHub:** [dipendragupta748-lang](https://github.com/dipendragupta748-lang)
 
-## 🚀 Quick Installation (Step 1)
+Bina laptop, sirf phone se: **OpenCode (AI) se app likhwao aur phone pe hi APK banao.**
+Ek script, sirf Termux — koi Ubuntu nahi.
 
-Open your Termux and run the following single-line command to execute the setup:
-Daniel Bypass - Termux AI & Coding Setup
+**Zaroorat:** Android 7+, 6 GB+ RAM wala phone, ~4 GB khali jagah, WiFi (~1 GB download).
+
+---
+
+## Step 0: Termux Install Karo
+
+> ⚠️ **Play Store wala mat लेना — outdated hai!**
+
+Termux और Code Editor अपने हिसाब से सही सोर्स से इंस्टॉल कर लें।
+
+---
+
+## Step 1: Setup Script Chalao
+
+Termux खोलो और यह सिंगल-लाइन कमांड चलाओ जो सीधे मेमोरी में रन होती है:
+
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)
-```
-Project Directory में जाने के लिए:
-```bash
-cd ~/danielbypass
-```
-OpenCode AI एनवायरनमेंट लॉन्च करने के लिए:
-```bash
-opencode
-```
-ऐप का APK कंपाइल (Build) करने के लिए:
-```bash
-./gradlew assembleDebug
-```
-बने हुए APK को फोन के Download फोल्डर में भेजने के लिए:
-```bash
-cp app/build/outputs/apk/debug/app-debug.apk ~/storage/shared/Download/daniel-bypass.apk
-```
+bash <(curl -s [https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh](https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh))
