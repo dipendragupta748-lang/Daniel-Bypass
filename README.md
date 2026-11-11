@@ -8,6 +8,7 @@ Open your Termux and run the following single-line command to execute the setup:
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)
 ```
+Project Directory में जाने के लिए:
 ```bash
 cd ~/danielbypass
 ```
