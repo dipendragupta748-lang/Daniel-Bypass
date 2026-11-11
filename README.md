@@ -25,7 +25,7 @@ bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-By
 ```
 
 ```bash
-bash daniel.sh
+bash danifghel.sh
 ```
 
 - Naam poochega → banner ke liye (jaise: Daniel)
