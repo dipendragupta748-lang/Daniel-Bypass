@@ -5,9 +5,9 @@ Welcome to the official **Daniel Bypass** repository! This ecosystem provides au
 ## 🚀 Quick Installation (Step 1)
 
 Open your Termux and run the following single-line command to execute the setup:
-
 ```bash
-bash <(curl -s [https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh](https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh))
+bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)
+```
 cd ~/danielbypass
 opencode
 ./gradlew assembleDebug
