@@ -7,4 +7,4 @@ Welcome to the official Daniel Bypass repository! This setup script automaticall
 Run the following single-line command in your Termux to execute the setup:
 
 ```bash
-bash <(curl -s [https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh](https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)](https://raw.githubusercontent.com/TeraUsername/Daniel-Bypass-Setup/main/daniel.sh))
+bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)
