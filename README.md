@@ -24,10 +24,6 @@ Termux kholo aur ye do command chalao:
 bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)
 ```
 
-```bash
-bash danifghel.sh
-```
-
 - Naam poochega → banner ke liye (jaise: Daniel)
 - Storage ka popup aayega → **Allow**
 - Time: ~10-15 min. Beech mein koi sawaal nahi aata.
