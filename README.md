@@ -1,9 +1,11 @@
 # 📱 Phone pe Android App banao — Termux + OpenCode
 
+**DANIEL BYPASS** · Owner: Mr. Deependra Ji (Rupandehi Mobile)
+
 Bina laptop, sirf phone se: **OpenCode (AI) se app likhwao aur phone pe hi APK banao.**
 Ek script, sirf Termux — koi Ubuntu nahi.
 
-**Zaroorat:** Android 7+, 6 GB+ RAM wala phone, ~4 GB khali jagah, WiFi (~1 GB download).
+**Zaroorat:** Android 7+, 6 GB+ RAM wala phone (arm64), ~4 GB khali jagah, WiFi (~1 GB download).
 
 ---
 
@@ -11,14 +13,15 @@ Ek script, sirf Termux — koi Ubuntu nahi.
 
 > ⚠️ **Play Store wala mat lena — outdated hai!**
 
-** Termux Yaha se install karo **👇 
-. [Download Termux]https://f-droid.org/packages/com.termux/
+Termux yaha se install karo 👇
+
+[**Download Termux (F-Droid)**](https://f-droid.org/packages/com.termux/)
 
 ---
 
 ## Step 1: Setup Script Chalao
 
-Termux kholo aur ye do command chalao:
+Termux kholo aur ye command chalao:
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)
@@ -27,21 +30,21 @@ bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-By
 - Naam poochega → banner ke liye (jaise: Daniel)
 - Storage ka popup aayega → **Allow**
 - Time: ~10-15 min. Beech mein koi sawaal nahi aata.
-- Kuch fail hua to script naam ke saath batata hai — `bash daniel.sh` dobara chalao, jo ho chuka hai wo skip hoga.
+- Kuch fail hua to script naam ke saath batata hai — wahi command dobara chalao, jo ho chuka hai wo skip hoga.
 
 Ye install karta hai:
 
 | Kya | Kyun |
 |:----|:-----|
-| OpenCode (+ glibc-runner) | AI se code likhwane ke liye (free models bhi) |
+| OpenCode (+ glibc-runner) | AI se code likhwane ke liye |
 | Java 17 + Gradle | APK build ke liye |
 | Android SDK 35 | Android ki library |
-| aapt2, apksigner (phone wale) | Google wale phone pe nahi chalte |
+| aapt2, apksigner (phone wale) | Google wale PC versions phone pe nahi chalte |
 | zsh + p10k + rainbow banner | Sundar terminal |
 
 Aakhir mein ek test app banta hai: **Download/hello-daniel.apk** — Files app se kholo, install karo. Screen pe likha aayega: *"Ye app phone pe hi bana hai!"*
 
-**Ho jaane ke baad Termux band karke kholo.**
+**Ho jaane ke baad Termux band karke dobara kholo.**
 
 ---
 
@@ -57,7 +60,7 @@ cd ~/hello-daniel
 opencode
 ```
 
-Pehli baar `/models` likho aur koi **free** model chuno (naam ke aakhir mein `-free`, jaise `deepseek-v4.1-flash-free`) — API key nahi chahiye. Apni key lagani ho to bahar `opencode auth login`. Phir OpenCode ko bolo, jaise:
+Pehli baar `/connect` likho aur apna provider chuno (API key lagegi). Free model milte hain to `/models` likhke dekho. Phir OpenCode ko bolo, jaise:
 
 ```
 Is project mein ek simple calculator app bana do. Sirf MainActivity.kt badlo, koi nayi library mat jodna.
@@ -89,19 +92,19 @@ addwrapper
 
 ## Sirf APK Banane Ka Setup (bina zsh / OpenCode)
 
-Sirf Java + Android SDK chahiye (jaise Manisha se app banwane ke liye)? Ye ek command, koi sawaal nahi poochti:
+Sirf Java + Android SDK chahiye? Ye ek command, koi sawaal nahi poochti:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh)
-
+bash <(curl -s https://raw.githubusercontent.com/dipendragupta748-lang/Daniel-Bypass/refs/heads/main/daniel.sh) --apk-only
 ```
+
 Aakhir mein `ANDROID_SETUP_OK` aaye to ready.
 
 ---
 
 ## 🎨 Look Badalna Ho
 
-Script The daniel Ai wala p10k look lagata hai. Apna look chuno:
+Script ek p10k look lagata hai. Apna look chuno:
 
 ```bash
 p10k configure
@@ -150,7 +153,7 @@ Gradle PC wala aapt2 download karta hai jo phone pe nahi chalta. Check karo:
 cat ~/.gradle/gradle.properties
 ```
 
-Isme `android.aapt2FromMavenOverride=` wali line honi chahiye. Na ho to `bash daniel.sh` dobara chalao.
+Isme `android.aapt2FromMavenOverride=` wali line honi chahiye. Na ho to setup command dobara chalao.
 
 ### ❌ `./gradlew: No such file or directory`
 
@@ -167,3 +170,15 @@ Pehla build 3-5 min normal hai (sab download hota hai). Baaki apps band rakho. 6
 ### ❌ P10k icons broken dikhte hain
 
 Termux band karke kholo (font lagta hai). Phir bhi ho to `p10k configure` mein icons ke liye "No" chuno.
+
+### ❌ Poora setup shuru se dobara karna hai
+
+```bash
+rm -rf ~/.daniel/done
+```
+
+Phir Step 1 wala command chalao.
+
+---
+
+**DANIEL BYPASS** · Owner: Mr. Deependra Ji (Rupandehi Mobile)
