@@ -1,0 +1,42 @@
+DANIEL BYPASS - LICENSE
+
+Copyright (c) 2026 Mr. Deependra Ji (Rupandehi Mobile). All rights reserved.
+
+This license applies to the scripts, documentation and other original files
+in this repository ("the Software"). It does NOT apply to third-party software
+that the Software downloads or installs (for example Termux, OpenCode, Gradle,
+the Android SDK, Java, zsh, Powerlevel10k). Those belong to their own owners
+and are covered by their own licenses.
+
+1. PERMISSION
+   You may run the Software on your own devices, for personal or internal use,
+   free of charge. You may modify your own local copy for your own use.
+
+2. SHARING
+   You may share the official link to this repository and tell others about it.
+   You may fork this repository on GitHub, as allowed by the GitHub Terms of
+   Service, but a fork is subject to this same license.
+
+3. YOU MAY NOT
+   a) Sell, rent, or charge money for the Software or for access to it.
+   b) Re-upload, republish or redistribute the Software, in whole or in part,
+      modified or unmodified, under your own name or brand, or in any way that
+      suggests you are its author or owner.
+   c) Remove or change the name "DANIEL BYPASS", the owner credit
+      "Mr. Deependra Ji (Rupandehi Mobile)", or this license notice.
+   d) Include the Software in a paid product, paid course, or paid service
+      without written permission from the owner.
+
+4. PERMISSION FROM THE OWNER
+   Anything not clearly allowed above needs the written permission of the owner.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE OWNER BE LIABLE
+   FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF THE
+   SOFTWARE. YOU USE IT AT YOUR OWN RISK.
+
+6. TERMINATION
+   If you break these terms, your permission to use the Software ends
+   automatically.
