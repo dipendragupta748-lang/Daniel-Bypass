@@ -66,15 +66,30 @@ Pehli baar `/connect` likho aur apna provider chuno (API key lagegi). Free model
 Is project mein ek simple calculator app bana do. Sirf MainActivity.kt badlo, koi nayi library mat jodna.
 ```
 
+### 🚪 OpenCode se bahar kaise nikle
+
+App ban jaane ke baad (ya jab bhi bahar aana ho), pehle OpenCode se **bahar** aana zaroori hai. OpenCode ke andar Termux ka command paste karoge to wo AI ko message ban kar chala jayega, Termux me nahi chalega.
+
+1. OpenCode ke neeche wale input box me ye likho aur **Enter** dabao:
+
+```
+/exit
+```
+
+2. Agar wo na chale, to neeche ki extra keys me **CTRL** dabao, fir `c` dabao (ek-do baar).
+3. Jab screen pe `$` wala prompt dikhe (jaise `~/hello-daniel $`), tab aap bahar aa gaye.
+
 ---
 
 ## Step 3: APK Banao aur Install Karo
 
-OpenCode se bahar aake:
+OpenCode se bahar aake (upar wale **"OpenCode se bahar kaise nikle"** steps se, jab `$` prompt dikhe), ye chalao:
 
 ```bash
 ./gradlew assembleDebug
 ```
+
+Aakhir me `BUILD SUCCESSFUL` aana chahiye. Phir:
 
 ```bash
 cp app/build/outputs/apk/debug/app-debug.apk /sdcard/Download/
