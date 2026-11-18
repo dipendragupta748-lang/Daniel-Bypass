@@ -51,6 +51,12 @@ BANNER
   printf '\033[1;36m  ============================================\033[0m\n\n'
 }
 
+# Beech me install kat jaye (Android "Killed") to dpkg adhura reh jata hai.
+# Ye usko wapas theek karta hai.
+fix_dpkg() {
+  dpkg --configure -a --force-confold >/dev/null 2>&1 || true
+}
+
 run_step() {
   local id="$1" label="$2" fn="$3"
   if [ -f "$DONE/$id" ]; then
@@ -58,11 +64,19 @@ run_step() {
     return 0
   fi
   say "$label"
+  fix_dpkg
   if "$fn"; then
     touch "$DONE/$id"
   else
-    FAILED+=("$label")
-    warn "FAIL: $label"
+    warn "Step fail hua. dpkg theek karke ek baar aur try kar raha hu..."
+    fix_dpkg
+    sleep 2
+    if "$fn"; then
+      touch "$DONE/$id"
+    else
+      FAILED+=("$label")
+      warn "FAIL: $label"
+    fi
   fi
 }
 
@@ -78,6 +92,13 @@ case "$(uname -m)" in
   aarch64|arm64) ;;
   *) warn "Ye script sirf arm64 phone ke liye hai ($(uname -m) mila)."; exit 1 ;;
 esac
+
+# Phone ko sone se roko (so jaye to Android install ko "Killed" kar deta hai)
+if command -v termux-wake-lock >/dev/null 2>&1; then
+  termux-wake-lock 2>/dev/null || true
+  trap 'termux-wake-unlock 2>/dev/null || true' EXIT
+fi
+fix_dpkg
 
 # Naam (banner ke liye) - sirf full setup me
 if [ "$APK_ONLY" -eq 0 ]; then
